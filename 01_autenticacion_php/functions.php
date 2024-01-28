@@ -24,10 +24,10 @@ if ($stmt = $db -> prepare($query)) {
     }
 
 // Cerrar la declaracion
-    $stmt->close()
-} else {
+    $stmt->close();
+    # code...
+}{
     // Mostrar un mensaje de error si la consulta falla
     echo "Error al consultar los permisos: " . $db->error;
 }
-
 ?>
